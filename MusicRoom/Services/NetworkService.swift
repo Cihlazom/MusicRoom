@@ -13,7 +13,7 @@ class NetworkService {
         let url = "https://itunes.apple.com/search"
         let parametrs = ["term":"\(searchText)",
                          "media":"music",
-                         "limit":"10"]
+                         "limit":"20"]
         
         AF.request(url, method: .get, parameters: parametrs).responseData { data in
             guard data.error == nil else {
